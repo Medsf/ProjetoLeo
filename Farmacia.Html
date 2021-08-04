@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Farmácia</title>
+</head>
+<script src="ProgramaFarmacia.Js"></script>
+
+<body>
+
+    <div class="container">
+        <label class="label">Digite o nome do produto</label>
+        <input type="text" class="form-control" id="nomeProduto" placeholder="Ex:Dorflex"> <br>
+        <label class="label">Digite o valor do produto</label>
+        <input type="number" class="form-control" id="valorProduto" placeholder="Ex:10,00"> <br>
+        <button class="btn btn-outline-primary" id="btn-salvar" onclick="Cadastrar()">Inserir</button>
+    </div>
+    <div>
+        <div class="container">
+            <table id="Tabela" class="table table-striped">
+                <tr>
+                    <th>Nome do produto</th>
+                    <th>Valor</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
